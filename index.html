@@ -6,661 +6,346 @@
         <title>ATD</title>
     </head>
     <body>
-        2-kurs talabalari uchun “Algoritmik tillar va dasturlash” fanidan
-        yakuniy nazorat savollari
-        <br>
-        1. WPFda oynaning hajmini o'zgartirish uchun qaysi elementdan
-        foydalaniladi?
-        <br>
-        Grid elementidan
-        <br>
-        2. Hodisalar qaysi kalit so’zlar orqali e’lon qilinadi?
-        <br>
-        event
-        <br>
-        3. Quyidagilardan qaysi biri hodisaga misol bo’ladi?
-        <br>
-        Button bo`lib Click hodisasiga misol
-        <br>
-        4. Foydalanuvchi tomonidan yaratiladigan nomlar fazosi sintaksisi qanday
-        bo’ladi?
-        <br>
-        namespace{}
-        <br>
-        5. C# da aniqlangan preprotsessor direktivalariga quyidagilardan qaysi
-        birlari kirmaydi?
-        <br>
-        delegate
-        <br>
-        6. C# da yig’ish qismlari xato ko’rsatilgan javobni toping.
-        <br>
-        7. Quyidagilardan qaysi biri dinamik turlarni aniqlash uchun
-        ishlatilmaydi?
-        <br>
-        sizeof
-        <br>
-        8. Quyidagilardan qaysi biri kolleksiyalarga kirmaydi?
-        <br>
-
-        9. Stek metodlaridan biri Pop() metodining vazifasi qanday?
-        <br>
-        Stekning eng yuqori elementini o`chiradi va uning qiymatini qaytaradi
-        <br>
-        10. Stek metodlaridan biri Contains() metodining vazifasi qanday?
-        <br>
-        Berilgan elementning stekda mavjud bo`lishini tekshiradi va natijani
-        qaytaradi
-        <br>
-        11. Dictionary metodlaridan biri Add(K key, V value) metodining vazifasi
-        qanday?
-        <br>
-        Yangi kalit va unga mos qiymatni qo`shadi
-        <br>
-        12. Graphics sinfining DrawBezier() metodining vazifasi qaysi javobda
-        to’g’ri berilgan?
-        <br>
-        Bezier egri chizig`ini chizish
-        <br>
-        13. Graphics sinfining DrawPolygon() metodining vazifasi qaysi javobda
-        to’g’ri berilgan?
-        <br>
-        Ko’pburchak shaklini chizish
-        <br>
-        14. Graphics sinfining DrawClosedCurve() metodining vazifasi qaysi
-        javobda to’g’ri berilgan?
-        <br>
-        Yopiq egri chiziq chizish, uning oxiri egri chiziqning boshi bilan
-        bo`g`lanadi.
-        <br>
-        15. Bir nechta parametrlarni qabul qiluvchi yagona lambda ifodasining
-        umumiy shaklini ko‘rsating.
-        <br>
-        (parametr1,parametr2,...)=>ifoda
-        <br>
-        16. Bitta parametrni qabul qiluvchi yagona lambda ifodasining umumiy
-        shaklini ko‘rsating.
-        <br>
-        parameter=>ifoda
-        <br>
-        17. C# dasturlash tilida barcha delegatlar qaysi sinfdan voris olingan?
-        <br>
-        System.Delegate
-        <br>
-        18. C# dasturlash tilida delegate «qaytaruvchi tur» «delegat
-        nomi»(parametrlar ro‘yxati) ; Dastur kodidagi (parametrlar ro‘yxati) -….
-        <br>
-        Delegate void MyDelegate(int x, int y);
-        <br>
-        19. C# dasturlash tilida delegate T guruh «T» (T parametr_turi); bu
-        yerda parametrlar turi to‘g’ri berilgan qatorni toping.
-        <br>
-        T
-        <br>
-        20. C# dasturlash tilida delegate T Metod «T»(T delegate_nomi); bu yerda
-        delegat nomi to‘g’ri berilgan qatorni toping.
-        <br>
-        <br>
-        Metod
-        <br>
-        21. C# dasturlash tilida delegate T sinf «T»(T delegat); bu yerda
-        delegat nomi to‘g’ri berilgan qatorni toping.
-        <br>
-        sinf
-        <br>
-        22. C# dasturlash tilida delegate T SomeOp «T»(T DT); Delegatga quyidagi
-        qaysi metod orqali murojaat qilish mumkin?
-        <br>
-        Invoke
-        <br>
-        23. C# dasturlash tilida delegate T tartiblash «T» (T alfa, T betta, T
-        gamma); bunda argumentlar berilgan qator qaysi?
-        <br>
-        alfa , betta ,gamma
-        <br>
-        24. C# dasturlash tilida delegate T tur_nomi «delegate_nomi»(T
-        delegat_nomi); bu yerda delegat nomi to‘g’ri berilgan qatorni toping.
-        <br>
-        <br>
-        tur_nomi
-        <br>
-        25. C# dasturlash tilida delegate TT guruh «TT» (TT dastur); bu yerda
-        parametrlar turi to‘g’ri berilgan qatorni toping.
-        <br>
-        TT
-        <br>
-        26. C# dasturlash tilida delegate tur dastur «tur»(int DA); Delegatga
-        qaysi metod orqali murojaat qilish mumkin?
-        <br>
-        Invoke
-        <br>
-        27. C# dasturlash tilida delegate tur masala «tur»(tur salom, tur olam);
-        bunda argumentlar berilgan qator qaysi?
-        <br>
-        Salom,olam
-        <br>
-        28. C# dasturlash tilida delegatlar qayerda e’lon qilinadi?
-        <br>
-        Sinfdan tashqarida va sinfning ichida
-        <br>
-        29. C# dasturlash tilida delegatni elon qilish uchun qanday kalit so‘z
-        ishlatiladi?
-        <br>
-        delegate
-        <br>
-        30. C# dasturlash tilida anonim funksiya nima?
-        <br>
-        Nomlangan va bir qatorda yaratilgan funksiya(kamola) Anonim funksiya
-        asosan delegat konstruktoriga uzatiladigan nomsiz kod blokidir(mahmud)
-        <br>
-        31. C# dasturlash tilida delegatning asosiy afzalligi nima?
-        <br>
-        Delegete tomonidan chaqirilgan metod komplatsiya jarayonida emas,ijro
-        etish vaqtida aniqlanadi.
-        <br>
-        32. delegate T guruh «T» (T parametr_turi); bu yerda parametrlar turi
-        to‘g’ri berilgan qatorni toping.
-        <br>
-        parametr_turi
-        <br>
-        33. delegate T Metod «T» (T delegate_nomi); bu yerda delegat nomi
-        to‘g’ri berilgan qatorni toping.
-        <br>
-        Metod
-        <br>
-        34. delegate T sinf «T» (T delegat); bu yerda delegat nomi to‘g’ri
-        berilgan qatorni toping.
-        <br>
-        sinf
-        <br>
-        35. delegate T tur_nomi «delegate_nomi» (T delegat_nomi); bu yerda
-        delegat nomi to‘g’ri berilgan qatorni toping.
-        <br>
-        tur_nomi
-        <br>
-        36. delegate TT guruh «TT» (TT dastur); bu yerda parametrlar turi
-        to‘g’ri berilgan qatorni toping.
-        <br>
-        TT
-        <br>
-        37. C# dasturlash tilida hodisa uchun e'lon qilingan delegatni
-        ko‘rsating.
-        <br>
-        Delegate void MyEventHandler();
-        <br>
-        38. C# da grafika chizish uchun foydalaniladigan sinflar berilgan
-        qatorni toping.
-        <br>
-        System.Drawing va System.Windiws.Form
-        <br>
-        39. this.Text = “Maydon”; Visual C# da dastur kodining vazifasi?
-        <br>
-        Formaning text xossasiganom beradi
-        <br>
-        40. Visual C# da Button1 tugmasi uchun yuklash hodisasi qaysi?
-        <br>
-        Click1
-        <br>
-        41. Visual C# da CheckedListBoxning Items xususiyati nima vazifani
-        bajaradi?
-        <br>
-        Bir nechta checkboxlar bilan ishlash uchun qo`llaniladi
-        <br>
-        42. Visual C# da chizilgan shaklning ichini naqsh ko‘rinishida bo‘yash
-        uchun qanday funksiya ishlatiladi?
-        <br>
-        FillRectangle() metodi yoki grafika obyekti ichida SolidBrush bilan
-        to`ldirilgan shakl
-        <br>
-        43. Visual C# da ContextMenu elementining vazifasi nima?
-        <br>
-        Biror narsaning sichqonchaning o`ng tugmasini bosganimizdan ochiladigan
-        oyna
-        <br>
-        44. Visual C# da Conteyner elementlarining bir nechta sahifalarni o‘z
-        ichiga oluvchi kompanentasi qaysi?
-        <br>
-        TabControl
-        <br>
-        45. Visual C# da Cursor elementining vazifasi nima?
-        <br>
-        Element ustida kursor paydo bo`lganida sichqoncha ko`rinishida paydo
-        bo`ladi
-        <br>
-        46. WPF ilovalarda interfeysni shakllantirish uchun qaysi stil
-        qo'llaniladi?
-        <br>
-        XAML(Extensible Aplacation Markup Language) stili
-        <br>
-        47. Visual C# da Dock xossasining vazifasi?
-        <br>
-        Bir elementni boshqa elementning bir tomoniga qo`yish uchun ishlatiladi.
-        <br>
-        48. Visual C# da DrawArc() metodi yordamida qanday shakl hosil qilinadi?
-        <br>
-        Yoy chizish
-        <br>
-        49. Visual C# da DrawLines() metodi yordamida qanday shakl hosil
-        qilinadi?
-        <br>
-        Chiziqlar chizish
-        <br>
-        50. Visual C# da DrawPolygon() metodi yordamida qanday shakl hosil
-        qilinadi?
-        <br>
-        Ko`pburchak
-        <br>
-        51. Visual C# da DrawRectangles() metodi yordamida qanday shakl hosil
-        qilinadi?
-        <br>
-        To`rtburchak
-        <br>
-        52. Visual C# da Form1 aa= new Form2(); aa.show(); this.Hide(); dastur
-        matni nima vazifa bajariladi?
-        <br>
-        Form1 dan Form2 ga o`tadi va Form1 oynasi yopiladi
-        <br>
-        53. Visual C# da forma oynasida koordinata boshi qaysi burchakdan
-        boshlanadi?
-        <br>
-        Yuqori chap burchakdan
-        <br>
-        54. Visual C# da formani yuklash hodisasi qaysi?
-        <br>
-        Form_Load hodisasi
-        <br>
-        55. Visual C# da formaning joriy holatdagi X koordinatasining maksimum
-        qiymatini olish qanday amalga oshiriladi?
-        <br>
-        ClientSize.Width
-        <br>
-        56. Visual C# da formaning joriy holatdagi Y koordinataning maksimum
-        qiymatini olish qanday qilinadi?
-        <br>
-        ClientSize.Height
-        <br>
-        57. WPFda oyna elementida xossalarini dinamik ravishda o'zgartirish
-        uchun qaysi elementdan foydalanish mumkin?
-        <br>
-        Style elementidan
-        <br>
-        58. Visual C# da hodisalar bu-?
-        <br>
-        Bazi harakatlar sodir boʻlganligi haqida avtomatik xabarnoma
-        <br>
-        59. Visual C# da joriy elementning BackColor xossasi nima vazifani
-        bajaradi?
-        <br>
-        Elementning orqa fon rangini aniqlaydi
-        <br>
-        60. Visual C# da joriy elementning BackgroundImage xossasi nima vazifani
-        bajaradi?
-        <br>
-        Elementning orqa fon tasvirini aniqlaydi
-        <br>
-        61. Visual C# da joriy elementning Font xossasi nima vazifani bajaradi?
-        <br>
-        Komponenta yozuvlarning shriftini, chizmasini, o`lchamini o`zgartirish
-        <br>
-        62. Visual C# da joriy elementning Name xossasi nima vazifani bajaradi?
-        <br>
-        Komponentga murojaat qilish mumkin bo`lgan nom
-        <br>
-        63. Visual C# da joriy elementning TextAlign xossasi nima vazifani
-        bajaradi?
-        <br>
-        Joriy elementning yozuvini joylashgan o`rnini belgilaydi.
-        <br>
-        64. Visual C# da joriy elementning Visible xossasi nima vazifani
-        bajaradi?
-        <br>
-        Elementning ko`rinishini yoki ko`rinmaganligini aniqlaydi
-        <br>
-        65. WPFda oynaning sarlavhasini o'zgartirish uchun qaysi xossadan
-        foydalanish mumumkin?
-        <br>
-        Title
-        <br>
-        66. Visual C# da LinkLabel elementining vazifasi nima?
-        <br>
-        Standart labelga o`xshash yozuv, lekin internet havolasi shaklida
-        ko`rsatadi
-        <br>
-        67. Visual C# da LinkLabelning LinkColor xossasi nima vazifa bajaradi?
-        <br>
-        LinkColor ushbu xususiyat havola rangini ko`rsatadi
-        <br>
-        68. WPF da grafik interfeysni yaratish uchun ishlatilishi mumkin bo'lgan
-        komponentlar va boshqaruv elementlarining barcha asosiy ilovalarini
-        qaysi kutubxona fayli o'z ichiga oladi?
-        <br>
-        System.Windows.Media fayli
-        <br>
-        69. WPF da Button elementiga nom berish uchun qaysi xossadan
-        foydalaniladi?
-        <br>
-        Content xossasi
-        <br>
-        70. Visibilityity xossasi nima uchun ishlatiladi?
-        <br>
-        Bu xossa elementning ko`rinishini o`rnatadi
-        <br>
-        71. Qaysi nomlar fazosi UIElement sinfi elementni joylashtirish,
-        hodisalarni boshqarish va kirishni qabul qilish qobiliyatini qo'shadi?
-        <br>
-        System.Windows.UIElement
-        <br>
-        72. Qaysi xossa shriftning qalinligini aniqlaydi va Black, Bold va
-        boshqa bir qator qiymatlarni qabul qiladi?
-        <br>
-        FontWeight
-        <br>
-        73. Qaysi xossa slayderning yo'nalishini gorizontal yoki vertikal
-        belgilaydi?
-        <br>
-        Orientation
-        <br>
-        74. WPFda ko'rinish beruvchi elementlar ichida ma'lumotni chiqarish
-        uchun qaysi komponentdan foydalanish mumkin?
-        <br>
-        Tooltip komponenti
-        <br>
-        75. WPF da Popup elementining vazifasi nima?
-        <br>
-        Elementi qalqib chiquvchi oynani ifodalaydi
-        <br>
-        76. Qaysi xossa slayder harakatlanishi mumkin bo'lgan vaqtni
-        millisekundlarda belgilaydi?
-        <br>
-        Interval
-        <br>
-
-        <br>
-        77. RadioButton elementining vazifasi nima?
-        <br>
-        Boshqaruv tugmachasi guruhlarni qo`llab quvvatlaydi.
-        <br>
-        78. Qaysi xossa u RightToLeft ga teng bo'lsa matn o’ng chetidan
-        boshlanadi, LeftToRight ga teng bo’lsa, chapdan boshlanadi?
-        <br>
-        TextAlign
-        <br>
-        79. Qaysi xossa bog’liqlik xossasi uchun standart qiymatni o'rnatadi?
-        <br>
-        DefaultValue
-        <br>
-        80. Qaysi xossa DependencyProperty obyektining qiymatini tozalaydi?
-        <br>
-        ClearValue
-        <br>
-        81. WPFda Grid sinfining vazifasi nima?
-        <br>
-        HTMLdagi bodyga o`xshab asosiy komponentlar qabul qiladi
-        <br>
-        82. WPF ning kengaytirilgan ko’rinishini aniqlang?
-        <br>
-        Windows Presatition Foundition
-        <br>
-        83. WPFda UI elementlarni xossalarini o'zgartirish uchun qaysi til
-        qo'llaniladi?
-        <br>
-        XAML
-        <br>
-        84. WPFda interfeysni yaratish uchun qaysi komponent asosiy qism
-        hisoblanadi?
-        <br>
-        Grid
-        <br>
-        85. WPFda o'zgaruvchilar va xossalar alohida joylashgan faylni
-        ko’rsating.
-        <br>
-        Resourse Dictionary (.xaml)
-        <br>
-        86. WPFda bir sahifadan boshqa sahifaga o'tish uchun qaysi elementdan
-        foydalanish mumkin?
-        <br>
-        Hyperlink
-        <br>
-        87. WPFda bir elementning ko'rinishini dinamik ravishda o'zgartirish
-        uchun qaysi xossadan foydalanish mumkin?
-        <br>
-        VisualStateManager
-        <br>
-        88. WPFda o'zgaruvchining o'zgarishiga javob berish uchun qaysi
-        hodisa(events)dan foydalaniladi?
-        <br>
-        PropertyChanged
-        <br>
-        89. WPFda elementni oynada joylashgan yoki yo'qligini aniqlash uchun
-        qaysi xossadan foydalanish mumkin?
-        <br>
-        IsVisible
-        <br>
-        90. WPF texnologiyasida mantiqiy resurslarni C# kodiga qanday xossadan
-        foydalangan holda o’rnatilishi mumkin?
-        <br>
-        Resources
-        <br>
-        91. WPFda ResourceKey xossasidan qanday maqsadda foydalaniladi?
-        <br>
-        Mantiqiy resurslarni identifikatsiya qilishda ishlatiladi masalan stil
-        matrisk rasmlar matnlar
-        <br>
-        92. WPFda shakllar qaysi sinfdan voris olingan?
-        <br>
-        System.Windows.Shapes.Shape abstrak sinifidan
-        <br>
-        93. WPF da shakl chegarasining qalinligini o’rnatish uchun qanday
-        xossadan foydalaniladi?
-        <br>
-        StrokeThikness
-        <br>
-        94. To’rtburchak burchaklarini aylanaga o’tkazish uchun qanday
-        xossalardan foydalaniladi?
-        <br>
-        RadiusX va RadiusY
-        <br>
-        95. WPF da transformatsiyalar qanday maqsadda ishlatiladi?
-        <br>
-        Elementlarning joylashuvi yoki hajmini o`zgartirish vositasidir.
-        <br>
-        96. Transformatsiyalar qaysi sinfdan voris olingan?
-        <br>
-        System.Windows.Media.Transform
-        <br>
-        97. Resursni statik qilib o’rnatish uchun qanday ifodadan foydalaniladi?
-        <br>
-        StaticResource
-        <br>
-        98. Bitta animatsiyada nechtagacha ulash xossasidan foydalanishimiz
-        mumkin?
-        <br>
-        Faqat bitta
-        <br>
-        99. WPF da barcha animatsiya sinflarini shartli ravishda nechta guruhga
-        ajratish mumkin?
-        <br>
-        3 guruhga
-        <br>
-        100. WPF da animatsiyani boshlash uchun qanday metoddan foydalaniladi?
-        <br>
-        BeginAnimation()
-        <br>
-        101. Bitta animatsiya eng ko’pi bilan nechta obyekt xossasi ishlashi
-        mumkin?
-        <br>
-        Faqat bitta
-        <br>
-        102. XAMLda animatsiyani aniqlash uchun qanday obyektidan foydalaniladi?
-        <br>
-        Eventtigger obʼyektidan yoki hodisa tiggeridan foydalaniladi
-        <br>
-        103. PathGeometry obyekti xossani harakatlantirish uchun ishlatiladigan
-        animatsiya nima deb ataladi?
-        <br>
-        Yo`l animatsiyasi
-        <br>
-        104. Yo'l animatsiyalari qanday sinflar bilan ifodalanadi?
-        <br>
-        DoubleAnimationUsingPath
-        <br>
-        MatrixAnimationUsingPath
-        <br>
-        PointAnimationUsingPath
-        <br>
-
-        <br>
-        105. Mavjud stillarni voris qilib olish uchun qo’llaniladigan xossa
-        qaysi?
-        <br>
-        BasedOn
-        <br>
-        106. Triggerlardan qanday maqsadda foydalaniladi?
-        <br>
-        Wpfda triggerlar asosan UI elementlarining holatini dinamik ravishda
-        o`zgartirish uchun ishlatiladi
-        <br>
-        107. Triggerlar qanday turlarga bo’linadi?
-        <br>
-        Xossa tiggerlar,Hodisa tiggerlar ,Malumot tiggerlar ,multi tiggerlar
-        <br>
-        108. Agar bir vaqtning o'zida bir emas, bir nechta xossalarni kuzatish
-        kerak bo'lsa, qanday trigger obyektidan foydalaniladi?
-        <br>
-        Multi-trigger
-        <br>
-        109. Vizual studioda visual daraxtini ko'rish uchun bajariladigan
-        buyruqlar ketma – ketligini ko’rsating?
-        <br>
-        Debug > Windows >Live Visul Tree
-        <br>
-        110. Qanday xossasidan foydalanib, shablonni to'g'ridan-to'g'ri
-        elementning o'zida belgilash mumkin?
-        <br>
-        Template xossasi
-        <br>
-        111. Shaklni shaffof, ko'rinmas qilish imkonini beruvchi xossa?
-        <br>
-        AllowsTransparency
-        <br>
-        112. WPF da nuqtali effekt yaratib, shakl chegarasini shtrix sifatida
-        o'rnatuvchi xossa qaysi?
-        <br>
-        StrokeDashArray
-        <br>
-        113. Bir nechta Geometry obyektlaridan iborat shakl bu?
-        <br>
-        GeomtryGroup
-        114. CombinedGeometryning vazifasi?
-        ikkita Geomtry obyektidan iborat shakl yaratadi
-        <br>
-        115. WPF da qaysi menejer panelning turli tomonlariga avlod
-        elementlarini o'rnatadi?
-        <br>
-        docpanel
-        <br>
-        116. XAML qanday toifadagi elementlarni o'z ichiga oladi?
-        Marjona
-        <br>
-        117. XAML deskriptorida qanday nomlar fazosi ishlatiladi?
-        <br>
-        Doimiy va kengaytirilgan
-        <br>
-        118. 2D vektor grafikasi bilan bog'liq WPF ning foydali tomoni nimada?
-        <br>
-        Ruxsat va oyna o`lchamidan maksimal mustaqillik
-        <br>
-        119. Qaysi fayl WPF da obyekt deskriptorlarini o'z ichiga oladi?
-        <br>
-        MainWindow.xaml
-        <br>
-        120. WPF da Canvas panelida elementning kengligi va balandligi qanday
-        o'rnatiladi?
-        <br>
-        Canvas.Left=”50” Canvas.Top=”50”
-        <br>
-        121. WPF ilovasi ishga tushganda qanday hodisa o'chiriladi?
-        <br>
-        Application.Startup
-        <br>
-        122. Qaysi WPF elementi oynaning ildiz elementi sifatida ishlatiladi?
-        <br>
-        Window
-        <br>
-        123. WPF da ilovaning istalgan joyidan Application obyektiga qanday
-        kirish mumkin?
-        <br>
-        Application.Current
-        <br>
-        124. XAML da tugma foni uchun chiziqli gradient to'ldirishni qanday
-        belgilash mumkin?
-        <br>
-        LinearGradientBrush
-        <br>
-        125. WPF da qaysi maket menejeri jadval to'ridagi elementlarni tartibga
-        soladi?
-        <br>
-        Grid maket menejeridan foydalaniladi
-        <br>
-        126. XAML dialekti (shevasi) nima?
-        <br>
-        Extensible Application Markup Language
-        <br>
-        127. WPF da Canvas panelidagi elementning vertikal holatini aniqlash
-        uchun qaysi biriktiriladigan xossadan foydalaniladi?
-        <br>
-        Canvas.Top
-        <br>
-        128. WPF da quyidagi menejerlardan qaysi biri kontentning mutlaq
-        joylashuvini qo'llab-quvvatlaydi?
-        <br>
-        Canvas panelidan foydalanib, siz elementlarning aniq x va y
-        koordinatalarini Canvas.Left va Canvas.Top xossalari orqali
-        belgilashingiz mumkin.
-        <br>
-        129. WPF da XAML belgilash tili nima?
-        <br>
-        WPF bn bog`liq holda HAML haqida web dasturlashda HTML kabi interfeys
-        yaratishga imkon beruvchi belgilash tili
-        <br>
-        130. StackPanelda avlod elementlarining yo'nalishini qanday o'zgartirish
-        mumki1n?
-        <br>
-        Orientation
-        <br>
-        131. XAML nechta toifadagi elementlarni o'z ichiga oladi?
-        <br>
-        4 ta
-        <br>
-        132. XAMLda tugmachaning fon rangini qanday o'rnatish mumkin?
-        <br>
-        Background
-        <br>
-        133. WPF da dasturni tugatish uchun qaysi metod chaqiriladi?
-        <br>
-
-        <br>
-        Application.Exit();
-        <br>
-        134. WPF da foydalanuvchi kodi ishga tushgunga qadar qanday hodisa
-        bajariladi?
-        <br>
-        Startup
-        <br>
-        135. WPF da Canvas panelidagi elementning gorizontal holatini aniqlash
-        uchun qaysi biriktiriladigan xossadan foydalaniladi?
-        <br>
-        Сanvas.Left
-        <br>
-        136. WPF da Grid panelidagi ustunlar sonini belgilash uchun qaysi
-        biriktiriladigan xossadan foydalaniladi?
-        <br>
-        Grid.ColumnCount
-        <br>
-        137. WPF da Grid panelidagi katakchalarni birlashtirish uchun qaysi
-        element ishlatiladi?
-        <br>
-        Rowspan,Columnspan
-        <br>
-
+        
+<br>
+Algoritm nima?
+<br>#Masalaning yechimi uchun bir qator qadamlar
+<br>
+Psevdokod nima?
+<br>#Algoritmni kodsiz, oddiy tilda yozish
+<br>
+Big-O notatsiyasi nima?
+<br>#Algoritmning eng yomon holatini aniqlash
+<br>
+O(1) degani nimani anglatadi?
+<br>#Algoritm ishlash vaqti ma'lumotlar soniga bog'liq emas
+<br>
+Binary search algoritmi qanday ishlaydi?
+<br>#Ma'lumotlar ikki qismga bo'linib qidiriladi
+<br>
+Bubble sort algoritmi qanday ishlaydi?
+<br>#Qoshni elementlarni solishtirib almashish
+<br>
+Rekursiya nima?
+<br>#Funksiya o'zini chaqirishi
+<br>
+Hash jadvali nima?
+<br>#Hash funksiyasi orqali ma'lumotlarni joylash
+<br>
+Graf nima?
+<br>#Tugunlar va qirralardan iborat ma'lumotlar strukturas
+<br>
+Tree nima?
+<br>#Ierarxik ma'lumotlar strukturas
+<br>
+Binary tree nima?
+<br>#Har bir tugun ko'pi bilan ikkita bolaga ega
+<br>
+Heap nima?
+<br>#Daraxtda eng katta yoki eng kichik element yuqorida
+<br>
+Breadth-First Search (BFS) nima?
+<br>#Grafni kenglik bo'yicha qidirish
+<br>
+Depth-First Search (DFS) nima?
+<br>#Grafni chuqurlik bo'yicha qidirish
+<br>
+Dijkstra algoritmi nima?
+<br>#Eng qisqa yo'lni topish
+<br>
+Kruskal algoritmi nima?
+<br>#Minimal bog'lovchi daraxtni topish
+<br>
+Dynamic programming nima?
+<br>#Bir marta yechilgan kichik masalalarni qayta ishlatish
+<br>
+Greedy algoritmlar nima?
+<br>#Har bir bosqichda eng yaxshi qaror qabul qilish
+<br>
+Linked list nima?
+<br>#Tugunlar va bog'lanishlardan iborat
+<br>
+Stack nima?
+<br>#Oxirgi kirgan birinchi chiqadi
+<br>
+Queue nima?
+<br>#Birinchi kirgan birinchi chiqadi
+<br>
+Backtracking nima?
+<br>#Qaytarib borish
+<br>
+Bellman-Ford algoritmi nima?
+<br>#Eng qisqa yo'lni topish
+<br>
+Topological sorting nima?
+<br>#Grafikdagi tugunlarni tartiblash
+<br>
+Minimum spanning tree nima?
+<br>#Eng kichik bog'lovchi daraxt
+<br>
+Dasturlash tili nima?
+<br>#Kompyuter bilan muloqot qilish uchun vosita
+<br>
+Python qanday dasturlash tili?
+<br>#Yuqori darajali
+<br>
+Java qanday dasturlash tili?
+<br>#Yuqori darajali
+<br>
+C++ qanday dasturlash tili?
+<br>#Yuqori darajali
+<br>
+JavaScript qanday dasturlash tili?
+<br>#Frontend
+<br>
+OOP nima?
+<br>#Ob'yektga yo'naltirilgan dasturlash
+<br>
+Class va object o'rtasidagi farq nima?
+<br>#Class ob'yektni yaratish uchun shablon
+<br>
+Inheritance nima?
+<br>#Bir class boshqa classdan xususiyatlar olish
+<br>
+Polymorphism nima?
+<br>#Bir nechta classlar bir xil nomdagi metodlarga ega bo'lishi
+<br>
+Encapsulation nima?
+<br>#Ma'lumotlarni yashirish
+<br>
+Abstraction nima?
+<br>#Muayyan ma'lumotlarni yashirib, faqat muhimlarini ko'rsatish
+<br>
+Interface va abstract class o'rtasidagi farq nima?
+<br>#Interface metodlarni e'lon qiladi, abstract class esa qisman amalga oshiradi
+<br>
+Python'da list va tuple o'rtasidagi farq nima?
+<br>#List o'zgaruvchan, tuple esa o'zgarmas
+<br>
+Python'da dictionary nima?
+<br>#Kalit-qiymat juftliklari
+<br>
+Java'da ArrayList nima?
+<br>#O'zgaruvchan o'lchamdagi ro'yxat
+<br>
+Java'da HashMap nima?
+<br>#Kalit-qiymat juftliklari
+<br>
+C++'da vector nima?
+<br>#O'zgaruvchan o'lchamdagi massiv
+<br>
+JavaScript'da closure nima?
+<br>#Funksiya va uning lexical kontekstini saqlash
+<br>
+Callback funksiyasi nima?
+<br>#Funksiyani boshqa funksiya ichida chaqirish
+<br>
+Promise nima?
+<br>#Asinxron operatsiya natijasini bildiruvchi obyekt
+<br>
+Async/await nima?
+<br>#Asinxron kodni sinxron ko'rinishda yozish
+<br>
+HTML'da div va span o'rtasidagi farq nima?
+<br>#Div blok elementi, span inline elementi
+<br>
+CSS'da flexbox va grid o'rtasidagi farq nima?
+<br>#Flexbox bir o'lchamli, grid ikki o'lchamli
+<br>
+Responsive dizayn nima?
+<br>#Veb sahifalarni turli qurilmalarda mos ko'rinishda bo'lishi
+<br>
+Git nima?
+<br>#Versiyalar boshqaruvi tizimi
+<br>
+Version control nima?
+<br>#Kodning turli versiyalarini boshqarish
+<br>
+Branching nima?
+<br>#Kodning yangi nusxasini yaratish
+<br>
+Pull request nima?
+<br>#Kodni ko'rib chiqish va birlashtirish uchun so'rov
+<br>
+Merge conflict nima?
+<br>#Kodni birlashtirishda yuzaga keladigan nizolar
+<br>
+REST API nima?
+<br>#Ma'lumotlar almashinuvi uchun arxitektura uslubi
+<br>
+JSON nima?
+<br>#Java Script Object Notation
+<br>
+XML nima?
+<br>#Extensible Markup Language
+<br>
+SQL nima?
+<br>#Structured Query Language
+<br>
+NoSQL nima?
+<br>#Ma'lumotlar bazasi turlari
+<br>
+CRUD operatsiyalari nima?
+<br>#Create, Read, Update, Delete
+<br>
+Join operatsiyasi nima?
+<br>#Ma'lumotlarni birlashtirish
+<br>
+Index nima?
+<br>#Ma'lumotlarni tezkor qidirish uchun
+<br>
+Transaction nima?
+<br>#Birgalikda bajariladigan amallar
+<br>
+ACID xususiyatlari nima?
+<br>#Atomiklik, Konsistensiya, Izolyatsiya, Doimiylik
+<br>
+Normalization nima?
+<br>#Ma'lumotlarni strukturalash
+<br>
+Denormalization nima?
+<br>#Ma'lumotlarni takrorlash
+<br>
+Primary key va foreign key o'rtasidagi farq nima?
+<br>#Primary key ma'lumotni yagona identifikatsiya qiladi, foreign key esa boshqa jadvalga bog'lanish
+<br>
+API nima?
+<br>#Application Programming Interface
+<br>
+OAuth nima?
+<br>#Avtorizatsiya protokoli
+<br>
+Microservices nima?
+<br>#Katta tizimlarni kichik mustaqil xizmatlarga ajratish
+<br>
+Containerization nima?
+<br>#Dasturlarni konteynerlarda ishlatish
+<br>
+Docker nima?
+<br>#Containerization vositasi
+<br>
+Kubernetes nima?
+<br>#Container orchestration platformasi
+<br>
+Cloud computing nima?
+<br>#Dasturlarni internet orqali ta'minlash
+<br>
+SaaS nima?
+<br>#Software as a Service
+<br>
+IaaS nima?
+<br>#Infrastructure as a Service
+<br>
+PaaS nima?
+<br>#Platform as a Service
+<br>
+Machine learning nima?
+<br>#Kompyuterning ma'lumotlardan o'rganish qobiliyati
+<br>
+Supervised learning nima?
+<br>#Teglar bilan belgilangan ma'lumotlar yordamida o'rganish
+<br>
+Unsupervised learning nima?
+<br>#Teglar bilan belgilangan ma'lumotlarsiz o'rganish
+<br>
+Reinforcement learning nima?
+<br>#Mukofot va jazolar orqali o'rganish
+<br>
+Neural network nima?
+<br>#Biologik nerv sistemalariga o'xshash kompyuter tizimi
+<br>
+Deep learning nima?
+<br>#Ko'p qatlamli neural network yordamida o'rganish
+<br>
+NLP nima?
+<br>#Natural Language Processing
+<br>
+Big Data nima?
+<br>#Katta hajmdagi ma'lumotlar
+<br>
+INT turi uchun qaysi amallar o'rinli
+<br>#qo'shish, ayirish, butun sonli bo'lish, qoldiqli bo'lish
+<br>
+FLOAT  turi uchun qaysi amallar o'rinli
+<br>#qo'shish, ayrish, ko'paytirish, bo'lish
+<br>
+STRUCT kalit so'zi yordamida qanday tuzilma yaratiladi
+<br>#Yozuv
+<br>
+Algoritm nima?
+<br>#amallar ketma-ketligi
+<br>
+Ma'lumotlar tuzilmasi nima
+<br>#bu ma'lumot elementlari va ular orasidagi munosabatlar majmuasi
+<br>
+' - obyektni mazkur obyektga murojaat qilish orqali aniqlashdir.
+<br>#Rekursiya
+<br>
+Ma'lumotlar tuzilmasi, tashkil qiluvchi elementlari qaysining o'xshash elementlar bo'lsa, u xoda ... deyiladi.
+<br>#Rekursiv ma'lumotlar tuzilmasi
+<br>
+Rekursiv triadaning qaysi bosqichida masala shartini tasniflash va uni hal etish uchun parametrlar aniqlanadi.
+<br>#parametrizasiya
+<br>
+Daraxtsimon tuzilmadagi shunday  elementga murojaat yo'qki, u... tugun xisoblanadi.
+<br>#ildiz
+<br>
+Binar daraxt uchun to'g'ri (yuqoridan pastga) ko'ruv amalining natijasini ko'rsating
+<br>#BAC
+<br>
+Stekga yangi element qushish funksiyasi qanday belgilanadi
+<br>#Push
+<br>
+Stekdan yuqori elementini o'chirish funksiyasi qanday belgilanadi
+<br>#Pop
+<br>
+Ro'yxatni massivdan ustunligini ko'rsating
+<br>#ro'yxatni uzunligiga chegara belgilanmaydi
+<br>
+Dastur bajarilish jarayonida xotira xajmi statik belgilanadi va deskriptor-ko'rsatkich orqali foydalanilgan tuzilma to'plamlariga ... deyiladi.
+<br>#Yarimstatik ma'lumotlar tuzilmasi
+<br>
+Stek bu ...
+<br>#chiziqli ma'lumotlar tuzilmasi bo'lib, ma'lumotlarni kiritish va chiqarish uning bir tomonidan amalga oshiriladi
+<br>
+Navbat bu...
+<br>#shunday tuzilmaki, u yelementlar qo'shilishi bilan kengayib boradi va elementlarni faqatgina bir tomondan qabul qiladi
+<br>
+Qanday kalit so'zi yordamida nol havola (bo'sh manzil) belgilanadi
+<br>#NULL
+<br>
+Ikki bog'lamli ro'yxatda nechta ko'rsatkichdan foydalaniladi
+<br>#2
+<br>
+Bir xil tipdagi o'zaro  takrorlanmaydigan elementlardan iborat majmua
+<br>#To'plam
+<br>
+Ma'lumotlar tuzilmalari tartibiga ko'ra qo'yidagilarga klassifikasiyalanadi
+<br>#Chiziqli va chiziqsiz
+<br>
+Ma'lumotlar tuzilmalari uchun ajratilgan xotirani o'chirish amali qanday nomlanadi
+<br>#yo'qotish
+<br>
+Ma'lumotlar tuzilmalariga ruxsat olish amali qanday nomlanadi
+<br>#tanlash (ruxsat)
+<br>
+ifodaning bitlar ustidagi amal natijasini aniqlang
+<br>#14
+<br>
+Dastur fragmentining natijsini aniqlang:
+<br>#1
+<br>
+Ro'yxatni massivdan ustunligini ko'rsating
+<br>#ro'yxatni uzunligiga chegara belgilanmaydi
+<br>
+Stek bu ...
+<br>#chiziqli ma'lumotlar tuzilmasi bo'lib, ma'lumotlarni kiritish va chiqarish uning bir tomonidan amalga oshiriladi
+<br>
+Rekursiv funksiyalar apparati kim tomondan kashf qilingan
+<br>#A.Chyorch
+<br>
+Rekursiv triadaning qaysi bosqichida umumiy holatni nisbatan ancha oddiy bo'lgan o'zgargan parametrli qism masalalar orqali ifodalaydi.
+<br>#dekompozisiya
+<br>
     </body>
 </html>
